@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/uikit-rtl.min.css">
+    <link rel="stylesheet" href="css/uikit.min.css">
+</head>
+<style>
+    body,html,*{
+        margin: 0;
+        padding: 0;
+    }
+    .uk-text-white{
+        color: white;
+    }
+    .form-lan {
+    background-position: center bottom;
+    min-height: 100vh;
+    background-image: url(2.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+    .uk-button-green{
+        background-color: #0ecd19;
+    color: black;
+    font-weight: bold;
+    }
+    .align-center{
+        text-align: center;
+    }
+    .column-60 {
+    flex-basis: 60%;
+    padding: 0 2.5em;
+}
+.form-right {
+    margin-top: 5em;
+}
+.w600{
+    width: 600px;
+}
+.img-abs img{
+	width: 180px;
+}
+.img-abs {
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.img-relative{
+    position: relative;
+    min-height: 100vh;
+    background-image: url('fondo1.png');
+    background-position: center center;
+    background-size: cover;
+}
+img.img-logomonark {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 450px;
+}
+@media screen and (max-width: 840px){
+    img.img-logomonark {
+    width: 350px;
+}
+}
+.img-abs {
+    border-bottom: 1px solid;
+}
+.w500{
+    width: 500px;
+}
+@media screen and (max-width: 649px){
+    img.img-logomonark {
+    width: 350px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+.form-lan{
+    justify-content: center;
+}
+input.uk-input {
+    width: 400px;
+}
+.uk-margin.d-flex.uk-flex.w600 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+input.uk-input.uk-margin-right {
+    margin-bottom: 1em;
+}
+}
+
+</style>
+<body>
+    <section class="img-relative">
+    	<img src="logo-rutas-monark.png" class="img-logomonark">
+        <div class="img-abs">
+            <div class="uk-flex w500">
+                <a href="#modal-full" uk-toggle><img src="caminata.png" ></a>
+                <a href="#modal-full2" uk-toggle><img src="cycling.png" ></a>
+                <a href="#modal-full3" uk-toggle><img src="trekking.png" ></a>
+            </div>
+        </div>
+    </section>
+    <div id="modal-full" class="uk-modal-full" uk-modal>
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+        <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+           <section class="form-lan">
+            <div class="column-60">
+                <div class="form-right">
+                    <form action="s1.html">
+                    <h3 class="uk-text-white uk-text-bold">POR FAVOR, LLENE LA SIGUIENTE INFORMACIÓN</h3>
+                        <fieldset class="uk-fieldset">   
+                            <div class="uk-margin">
+                                <input type="text" class="uk-input" placeholder="Nombre">
+                            </div>
+                            <div class="uk-margin">
+                                <input type="email" class="uk-input" placeholder="Correo Electrónico">
+                            </div>
+                            <div class="uk-margin d-flex uk-flex w600">
+                                <input type="text" class="uk-input uk-margin-right" placeholder="Teléfono">
+                                <input type="text" class="uk-input" placeholder="Celular">
+                            </div>
+                            <div class="uk-margin">
+                                <input type="text" class="uk-input" placeholder="Dirección">
+                            </div>
+                            <div class="uk-margin align-center">
+                                <button class="uk-button uk-button-green">ENVIAR</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+    </section> 
+        </div>
+    </div>
+</div>
+        <div id="modal-full2" class="uk-modal-full" uk-modal>
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+        <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+           <section class="form-lan">
+            <div class="column-60">
+                <div class="form-right">
+                    <form action="s2.html">
+                    <h3 class="uk-text-white uk-text-bold">POR FAVOR, LLENE LA SIGUIENTE INFORMACIÓN</h3>
+                        <fieldset class="uk-fieldset">   
+                            <div class="uk-margin">
+                                <input type="text" class="uk-input" placeholder="Nombre">
+                            </div>
+                            <div class="uk-margin">
+                                <input type="email" class="uk-input" placeholder="Correo Electrónico">
+                            </div>
+                            <div class="uk-margin d-flex uk-flex w600">
+                                <input type="text" class="uk-input uk-margin-right" placeholder="Teléfono">
+                                <input type="text" class="uk-input" placeholder="Celular">
+                            </div>
+                            <div class="uk-margin">
+                                <input type="text" class="uk-input" placeholder="Dirección">
+                            </div>
+                            <div class="uk-margin align-center">
+                                <button class="uk-button uk-button-green">ENVIAR</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+    </section> 
+        </div>
+    </div>
+</div>
+    <div id="modal-full3" class="uk-modal-full" uk-modal>
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+        <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+           <section class="form-lan">
+            <div class="column-60">
+                <div class="form-right">
+                    <form action="s3.html">
+                    <h3 class="uk-text-white uk-text-bold">POR FAVOR, LLENE LA SIGUIENTE INFORMACIÓN</h3>
+                        <fieldset class="uk-fieldset">   
+                            <div class="uk-margin">
+                                <input type="text" class="uk-input" placeholder="Nombre">
+                            </div>
+                            <div class="uk-margin">
+                                <input type="email" class="uk-input" placeholder="Correo Electrónico">
+                            </div>
+                            <div class="uk-margin d-flex uk-flex w600">
+                                <input type="text" class="uk-input uk-margin-right" placeholder="Teléfono">
+                                <input type="text" class="uk-input" placeholder="Celular">
+                            </div>
+                            <div class="uk-margin">
+                                <input type="text" class="uk-input" placeholder="Dirección">
+                            </div>
+                            <div class="uk-margin align-center">
+                                <button class="uk-button uk-button-green">ENVIAR</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+    </section> 
+        </div>
+    </div>
+</div>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="js/uikit.min.js"></script>  
+</body>
+</html>
