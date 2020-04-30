@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/uikit-rtl.min.css">
+    <link rel="stylesheet" href="css/uikit.min.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css'>
+<link href="http://allfont.es/allfont.css?fonts=dosis-medium" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<style>
+    body,html,*{
+        margin: 0;
+        padding: 0;
+    }
+    .item {
+    background: white;
+}
+    .fondo-recomendados{
+        background:#eaeaea;
+        padding-bottom: 3em;
+    }
+    .font-size12{
+        font-size: 1.2em;
+    }
+    .carousel-wrap {
+  margin: 40px auto;
+  padding: 0 5%;
+  width: 70%;
+  position: relative;
+}
+
+/* fix blank or flashing items on carousel */
+.owl-carousel .item {
+  position: relative;
+  z-index: 100; 
+  -webkit-backface-visibility: hidden; 
+}
+
+/* end fix */
+.owl-nav > div {
+  margin-top: -26px;
+  position: absolute;
+  top: 50%;
+  color: #cdcbcd;
+}
+
+.owl-nav i {
+  font-size: 52px;
+}
+
+.owl-nav .owl-prev {
+  left: -30px;
+}
+
+.owl-nav .owl-next {
+  right: -30px;
+}
+.text-black{
+    color: black;
+}
+.uk-padding-small {
+    padding: 15px;
+}
+a.uk-button.uk-button-default {
+    font-family: 'Dosis Medium', arial;
+    padding: 0 10px;
+}
+.btn-red {
+    color: white;
+    background: red;
+}
+.text-product {
+    font-family: 'Dosis Medium', arial;
+    color: black;
+    font-size: 1.2em;
+    margin-left: 18px;
+    padding: 0;
+    margin-bottom: 2px;
+}
+.sale-perc {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    display: inline-block;
+    width: auto;
+    height: 30px;
+    line-height: 32px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    padding: 0 15px;
+    top: 8px;
+    right: 5px;
+}
+.sale-perc:before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    background: #fff;
+    position: absolute;
+    top: 12px;
+    left: 0;
+    z-index: 1;
+    border-radius: 10px;
+}
+.sale-perc:after {
+    content: " ";
+    height: 22px;
+    width: 22px;
+    top: 4px;
+    left: -9px;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.sale-perc, .sale-perc:after {
+    background: red;
+    border-radius: 4px;
+    position: absolute;
+}
+span.text-precio {
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 15px;
+}
+.btn-blue:hover{
+    background: #1c58ac;
+    border: 1px solid #1c58ac;
+    -webkit-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    color:white;
+}
+.owl-carousel .owl-item img{
+    padding: 2em;
+}
+span.text-precio {
+    font-weight: bold;
+    font-size: 0.85em;
+}
+audio{
+  width: 0;
+  height: 0;
+}
+</style>
+<body>
+    <section>
+    	<img src="3.png">
+    </section>
+    <section class="fondo-recomendados">
+       <div class="uk-flex uk-flex-between">
+           <div>
+                <img src="texto-recomendados1.png" alt="">
+            </div>
+            <div>
+                <img src="logo-rutas-monark2.png" alt="">
+            </div>
+       </div>
+       <p class="uk-flex uk-flex-center uk-text-bold uk-text-center font-size12">Los siguientes productos se ajustan a tu estilo de vida<br>Encuentra también descuentos en productos ideales para ti.</p>
+       <div class="carousel-wrap">
+        <div class="owl-carousel">
+          <div class="item">
+              <img src="https://www.monark.com.pe/wp-content/uploads/bicicleta-eliptica-e-1020-600x600.jpg">
+              <p class="text-product">ELÍPTICA MONARK - E-1020</p> 
+              <span class="text-precio">S/999.00 inc. IGV</span>
+              <div class="uk-padding-small">
+                <a href="https://www.monark.com.pe/producto/eliptica-air-cross-trainer-monark-e-1020/" class="text-black uk-button uk-button-default btn-blue">VER DETALLE</a>
+                <a href="https://www.monark.com.pe/producto/eliptica-air-cross-trainer-monark-e-1020/" class="uk-button uk-button-default btn-red btn-blue">COMPRAR</a>
+              </div>
+            </div>
+          <div class="item">
+              <img src="https://www.monark.com.pe/wp-content/uploads/eliptica-trainer-e-401-monark-fitness-600x600.jpg">
+              <p class="text-product">ELÍPTICA MONARK - E-401</p>
+              <span class="text-precio"><del> S/1,099.00</del> S/999.00 inc. IGV</span>
+              <div class="sale-perc">-9%</div>
+              <div class="uk-padding-small">
+                <a href="https://www.monark.com.pe/producto/eliptica-trainer-monark-e-401-peru/" class="text-black uk-button uk-button-default btn-blue">VER DETALLE</a>
+                <a href="https://www.monark.com.pe/producto/eliptica-trainer-monark-e-401-peru/" class="uk-button uk-button-default btn-red btn-blue">COMPRAR</a>
+            </div>
+            </div>
+          <div class="item">
+              <img src="https://www.monark.com.pe/wp-content/uploads/eliptica-e5731-prestige-600x600.png">
+              <p class="text-product">ELÍPTICA PRESTIGE- E-5731</p> 
+              <span class="text-precio"><del> S/2,899.00</del> S/2,499.00 inc. IGV</span>
+              <div class="sale-perc">-14%</div>
+              <div class="uk-padding-small">
+                    <a href="https://www.monark.com.pe/producto/eliptica-prestige-e5731-monark/" class="text-black uk-button uk-button-default btn-blue">VER DETALLE</a>
+                    <a href="https://www.monark.com.pe/producto/eliptica-prestige-e5731-monark/" class="uk-button uk-button-default btn-red btn-blue">COMPRAR</a>
+            </div>
+            </div>
+          <div class="item">
+              <img src="https://www.monark.com.pe/wp-content/uploads/eliptica-6701-600x600.png">
+              <p class="text-product">ELÍPTICA PRESTIGE - E-6701</p>
+              <span class="text-precio">S/3,999.00 inc. IGV</span>
+              <div class="uk-padding-small">
+                    <a href="https://www.monark.com.pe/producto/eliptica-prestige-e6701-monark/" class="text-black uk-button uk-button-default btn-blue">VER DETALLE</a>
+                    <a href="https://www.monark.com.pe/producto/eliptica-prestige-e6701-monark/" class="uk-button uk-button-default btn-red btn-blue">COMPRAR</a>
+             </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <audio class="my_audio" controls autoplay preload="none">
+      <source src="caminadora.mp3" type="audio/mp3">
+  </audio>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="js/uikit.min.js"></script>  
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/owl.carousel.min.js'></script>
+<script src='https://use.fontawesome.com/826a7e3dce.js'></script>
+    <script>
+$(".my_audio").trigger('load');
+function play_audio(task) {
+      if(task == 'play'){
+           $(".my_audio").trigger('play');
+      }
+      if(task == 'stop'){
+           $(".my_audio").trigger('pause');
+           $(".my_audio").prop("currentTime",0);
+      }
+ }
+        $('.owl-carousel').owlCarousel({
+  loop: true,
+  margin: 35,
+  nav: true,
+  navText: [
+    "<i class='fa fa-caret-left'></i>",
+    "<i class='fa fa-caret-right'></i>"
+  ],
+  autoplay: true,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 1
+    },
+    720: {
+      items: 2
+    },
+    1000: {
+      items: 3
+    }
+  }
+})
+    </script>
+</body>
+</html>
